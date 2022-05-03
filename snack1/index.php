@@ -53,5 +53,18 @@
         ],
     ]
     ?>
+
+    <h2>Partite di basket:</h2>
+
+    <div>
+        <?php
+            for ($i = 0; $i < count($partite); $i++){
+                echo $partite[$i]["squadraCasa"] . ' - ';
+                echo $partite[$i]["squadraOspite"] . ' | ';
+                echo $partite[$i]["puntiSquadraCasa"] . '-';
+                echo $partite[$i]["puntiSquadraOspite"] . '<br>';
+            }
+        ?>
+    </div>
 </body>
 </html>
